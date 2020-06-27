@@ -1,0 +1,362 @@
+/* Basic Styling */
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    background: #e0cfa4;
+    font: Segoe UI Light;
+    color: #7a0e2c;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover, a:active {
+    text-decoration: none;
+    color: #a83e57;
+}
+
+h1 {
+    font: 40px Segoe UI Light;
+}
+
+h2 {
+    font: 40px Segoe UI Light;
+    color: #e0cfa4;
+}
+
+p, dl, table, label {
+    font: 16px Segoe UI Light;
+    font-weight: bold;
+    color: #7a0e2c;
+}
+
+/* Custom Padding, Aligns and Resizes that I did not want to include as inline CSS or repeating code */
+
+.centeredtext {
+    text-align: center;
+}
+
+.fontresizer {
+    font-size: 22px;
+}
+
+.textpadding {
+    padding: 40px 100px 20px 70px;
+}
+
+.widthsixty {
+    width: 60%;
+}
+
+.widthfull {
+    width: 100%;
+}
+
+.leftspace {
+    padding-left: 65px;
+}
+
+/* Form Styling */
+
+form {
+    margin: 50px;
+}
+
+input[type=text], [type=email], [type=tel] {
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    background-color: #e0cfa4;
+    border: none;
+    border-bottom: 2px solid #7a0e2c;
+    font: 20px Snell Roundhand, cursive;
+    color: #7a0e2c;
+}
+
+input[type=button], input[type=submit], input[type=reset] {
+    background-color: #f1e8d2;
+    border: dotted #7a0e2c;
+    color: #7a0e2c;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    font: 16px Segoe UI Light;
+}
+
+input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover {
+    background-color: #7a0e2c;
+    border: dotted #e0cfa4;
+    color: #e0cfa4;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    font: 16px Segoe UI Light;
+}
+
+textarea {
+    width: 450px;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px dotted #7a0e2c;
+    border-radius: 4px;
+    background-color: #f1e8d2;
+    font-size: 16px;
+    font: 16px Segoe UI Light;
+    color: #7a0e2c;
+    resize: none;
+}
+
+select {
+    padding: 16px 20px;
+    border: dotted #7a0e2c;
+    border-radius: 4px;
+    background-color: #f1e8d2;
+    font: 16px Segoe UI Light;
+    color: #7a0e2c;
+}
+
+::placeholder {
+    color: #c28480;
+    opacity: 1; /* Firefox */
+}
+  
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color: #c28480;
+}
+  
+::-ms-input-placeholder { /* Microsoft Edge */
+   color: #c28480;
+}
+
+/* Styling the Banner and Headers */
+
+.banner {
+    overflow: hidden;
+    display: block;
+    background-color: #e0cfa4;
+    background-image: url('elements/logoline.png'); /* This adds the Logo to the banner bg */
+    background-size:  auto 90px;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px;
+    font: 50px Segoe UI Light;
+    text-align: center; 
+    color: #7a0e2c;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+}
+
+.divider {
+    display: block;
+    background-image: url('elements/divider.png');
+    background-repeat: no-repeat;
+    top: 100;
+    width: 100%;
+}
+
+/* Styling the navbar */
+nav {
+    overflow: hidden;
+    background-color: #e0cfa4;
+    font: 22px Segoe UI Light;
+    position: fixed;
+    width: 100%;
+    margin: 0;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+}
+
+/* Links */
+nav a {
+    float: center;
+    display: row;
+    padding: 15px;
+}
+
+.navbutton {
+    width: 101px;
+    height: 37px;
+}
+
+.navbutton:hover {
+    transform: translate(2px, 2px);
+    opacity: 70%;
+}
+
+/* Styling the Body - Two-Column Layouts */
+
+.column {
+    float: left;
+    text-align: justify;
+}
+
+.left {
+    width: 60%;
+}
+
+.right {
+    width: 40%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.colskills {
+    margin: auto;
+    width: 50%;
+    padding: 40px;
+    float: left;
+    color: #7a0e2c;
+    font-family: Segoe UI Light;
+    font-size: 30px;
+    text-align: center;
+    /*border-right: 1px dashed #7a0e2c;
+    border-top: 1px dashed #7a0e2c;*/
+}
+
+.bordright {
+    border-right: 1px dashed #7a0e2c;
+}
+
+.bordtop {
+    border-top: 1px dashed #7a0e2c;
+}
+
+.coleduleft {
+    margin: auto;
+    width: 25%;
+    float: left;
+    padding: 20px;
+}
+
+.coleduright {
+    margin: auto;
+    width: 75%;
+    padding: 10px;
+    float: left;
+    font: 16px Segoe UI Light;
+    font-weight: bold;
+    color: #7a0e2c;
+    padding: 20px 180px 60px 60px;
+    text-align: justify;
+}
+
+/* Responsive Layout and Stacking of Columns */
+
+@media screen and (max-width:600px) {
+    .column{
+        width: 100%;
+    }
+}
+
+/* Image Overlays with Text */
+
+.container {
+    position: relative;
+}
+
+.image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlaytxt {
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: 100%;
+    right: 0;
+    text-align: left;
+    background-color: #e0cfa4;
+    overflow: hidden;
+    padding: 40px 40px 40px 40px;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+}
+
+.container:hover .image {
+    opacity: 0.2;
+    filter: blur(8px) brightness(0.5);
+}
+
+.container:hover .overlaytxt {
+    opacity: 0.8;
+    width: 100%; /*For fade-in OL, remove width and left*/
+    left: 0;
+}
+
+.text {
+    color: #7a0e2c;
+    font-family: Segoe UI Light;
+    font-size: 22px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(0%, -50%);
+    -ms-transform: translate(0%, -50%);
+    transform: translate(0%, -50%);
+    white-space: nowrap;
+}
+
+/* Styling Skill Stuff */
+
+.titleicon {
+    display: block;
+    width: auto; 
+    height: 90px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.skillicon {
+    display: block;
+    width: auto; 
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 45px;
+}
+
+.officeicon {
+    display: block;
+    width: 50%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 45px;
+}
+
+/* Footer */
+
+footer {
+    padding: 20px;
+    background-color: #e0cfa4;
+    text-align: center;
+    color: #7a0e2c;
+    font-family: Segoe UI Light;
+    font-size: 16px;
+    margin-top: 20px;
+  }
