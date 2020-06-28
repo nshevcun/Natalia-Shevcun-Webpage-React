@@ -9,7 +9,7 @@ class Slomyanski extends React.Component {
 
                 <div className="container">
 
-                    <img src={SLaw} className="image" alt="SL Law" />
+                    <img src={SLaw} className="image" alt="Slomyanski Law, Personal Injury Law Firm" />
 
                     <div className="overlaytxt text">
                         <b>

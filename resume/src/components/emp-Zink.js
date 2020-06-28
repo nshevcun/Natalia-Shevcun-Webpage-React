@@ -12,7 +12,7 @@ class Zink extends React.Component {
 
                 <div className="container">
 
-                    <img src={Zinkda} className="image" alt="Zink" />
+                    <img src={Zinkda} className="image" alt="Zink Digital Agency" />
                     
                     <div className="overlaytxt text">
                         <b>

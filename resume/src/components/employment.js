@@ -17,7 +17,7 @@ class Employment extends React.Component {
                     </div>
 
                     {/* I split this section into subcomponents, to swap out the workplaces easily, should the need arise. 
-                    ** emp-Zink was my main template for the other workplace components.
+                    ** emp-Zink was my main template for the other workplace components. Please see empZink for detailed comments.
                     ** emp-SL is the clean template for any future workplace components. */}
 
                     <div className="row">

@@ -12,7 +12,7 @@ class About extends React.Component {
                         <h2 id="about" className="leftspace"> ABOUT</h2>
                     </div>
         
-                    {/* Split layout into a two-column grid to place text and photo. I decided to keep a row/column layout over flexbox for browser compatibility purposes */}
+                    {/* I split layout into a two-column grid to place text and photo. I decided to keep a row/column layout over flexbox for browser compatibility purposes */}
 
                     <div className="row">
                         <div className="column left">
@@ -42,7 +42,7 @@ class About extends React.Component {
                         {/* The right column is for the photo */}
 
                         <div className="column right">
-                            <img src={MyPhoto} className="widthsixty" alt="About Natalia" />
+                            <img src={MyPhoto} className="widthsixty" alt="This is what Natalia looks like" />
                         </div>
 
                     </div>

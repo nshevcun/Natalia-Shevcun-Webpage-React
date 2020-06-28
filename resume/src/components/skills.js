@@ -49,7 +49,7 @@ class Skills extends React.Component {
                         <div className="colskills bordtop">
                             <img src={PencilIcon} className="titleicon" alt="Design VFX and Animation Software" />
                             <b>DESIGN, ANIMATION &amp; VFX SOFTWARE</b>
-                            <img src={ArtSkills} className="skillicon" alt="Art Software Skills" />
+                            <img src={ArtSkills} className="skillicon" alt="Mocha Pro, Nuke X, Corel Draw, Cinema 4D, The Adobe Creative Suite, Flipbook, Maya 3D" />
                         </div>
                     </div>
 

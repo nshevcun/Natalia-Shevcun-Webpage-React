@@ -9,7 +9,7 @@ class Legend extends React.Component {
 
                 <div className="container">
 
-                    <img src={LegendTD} className="image" alt="Walk Movie" /> {/* Yep, I actually worked on the stereo 3D of The Walk :) */}
+                    <img src={LegendTD} className="image" alt="Legend 3D - Walk Movie Screenshot" /> {/* Yep, I actually worked on the stereo 3D of The Walk :) */}
                     
                     <div className="overlaytxt text">
                         <b>
@@ -26,7 +26,7 @@ class Legend extends React.Component {
                         + 3+ years of corporate experience<br />
                         + Management of a team
                         <br />
-                        + <a href="https://www.imdb.com/name/nm7253655/" target="_blank" rel="noreferrer noopener">Check out my IMDB</a>
+                        + <a href="https://www.imdb.com/name/nm7253655/" target="_blank" rel="noreferrer noopener">Check out my IMDB</a> {/* The noreferrer noopener helps prevent security issues related to linking to external sources */}
                         </b>
 
                     </div>

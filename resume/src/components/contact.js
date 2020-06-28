@@ -25,6 +25,7 @@ class Contact extends React.Component {
                         <input type="text" name="myname" id="myname" />
 
                         {/* Guest's Inquiry Selection Here */}
+                        {/* I decided this section should be a list - to help me sort the messages according to importance */}
 
                         <p>
                             <label htmlFor="myinquiry">What is the nature of your inquiry?       </label>

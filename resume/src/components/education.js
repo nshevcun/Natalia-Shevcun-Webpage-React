@@ -27,7 +27,7 @@ class Education extends React.Component {
                     <div className="row">
 
                         <div className="coleduleft">
-                            <img src={YorkU} className="widthfull" alt="York Logo" />
+                            <img src={YorkU} className="widthfull" alt="York University Logo" />
                         </div>
 
                         <div className="coleduright">
@@ -55,7 +55,7 @@ class Education extends React.Component {
 
                         <div className="coleduleft">
                             <br /><br /><br />
-                            <img src={Ryerson} className="widthfull" alt="Ryerson Logo" />
+                            <img src={Ryerson} className="widthfull" alt="Ryerson University Logo" />
                         </div>
 
                         <div className="coleduright">
@@ -76,6 +76,8 @@ class Education extends React.Component {
                             may find a copy of her final paper <a href="downloads/ckdf150.pdf" target="_blank" rel="noreferrer noopener">here</a> if you are curious to take a look.
                             <br /><br />
 
+                            {/* The noreferrer noopener helps prevent security issues related to linking to external sources */}
+                            
                             <img src={Divider} alt="Divider Line 2" />
 
                         </div>
@@ -87,7 +89,7 @@ class Education extends React.Component {
                     <div className="row">
 
                         <div className="coleduleft">
-                            <img src={Sheridan} className="widthfull" alt="Sheridan Logo" />
+                            <img src={Sheridan} className="widthfull" alt="Sheridan College Logo" />
                         </div>
 
                         <div className="coleduright">

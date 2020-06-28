@@ -1,13 +1,13 @@
 /* Basic Styling */
 
 * {
-	box-sizing: border-box;
-}
+	box-sizing: border-box; /* This works with the floats - without it, the row/col grid does not align properly - Skill and Employment section end up forming columns rather than rows */
+} 
 
 html {
     scroll-behavior: smooth;
     max-width: 100%;
-    overflow-x: hidden;
+    overflow-x: hidden; /* This prevents a horizontal scrollbar */
 }
 
 body {
@@ -152,11 +152,11 @@ select {
     background-size:  auto 90px;
     background-position: center;
     background-repeat: no-repeat;
-    padding: 20px;
+    padding: 20px; /* Covers the gap that otherwise forms between the banner and navbar */
     font: 50px Segoe UI Light;
     text-align: center; 
     color: #7a0e2c;
-    position: fixed;
+    position: fixed; /* Makes the banner stick to the top */
     top: 0;
     width: 100%;
     z-index: 9999;
@@ -179,7 +179,7 @@ nav {
     width: 100%;
     margin: 0;
     z-index: 9999;
-    display: flex;
+    display: flex; /* Used flex to get rid of some old-fashioned inline alignment */
     justify-content: center;
 }
 
@@ -230,8 +230,6 @@ nav a {
     font-family: Segoe UI Light;
     font-size: 30px;
     text-align: center;
-    /*border-right: 1px dashed #7a0e2c;
-    border-top: 1px dashed #7a0e2c;*/
 }
 
 .bordright {
@@ -346,7 +344,9 @@ nav a {
     height: auto;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 45px;
+    margin-top: 45px; /* There are two icons here, 
+    and to get the borders of their box to align with the other boxes, 
+    I created a separate style and made the icons larger. */
 }
 
 /* Footer */
