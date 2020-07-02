@@ -35,6 +35,11 @@ h2 {
     color: #e0cfa4;
 }
 
+h3 {
+    font: 25px Segoe UI Light;
+    font-weight: bold;
+}
+
 p, dl, table, label {
     font: 16px Segoe UI Light;
     font-weight: bold;
@@ -43,12 +48,34 @@ p, dl, table, label {
 
 /* Custom Padding, Aligns and Resizes that I did not want to include as inline CSS or repeating code */
 
+.centered {
+    display: flex;
+    justify-content: center;
+}
+
+.paddingtop {
+    padding-top: 35px;
+}
+
+.smallerpaddingtop {
+    padding-top: 15px;
+}
+
+.alignbottom {
+    display: flex;
+    align-items: flex-end;
+}
+
 .centeredtext {
     text-align: center;
 }
 
 .fontresizer {
     font-size: 22px;
+}
+
+.fontshout {
+    font-size: 30px;
 }
 
 .textpadding {
@@ -73,8 +100,8 @@ form {
     margin: 50px;
 }
 
-input[type=text], [type=email], [type=tel] {
-    padding: 12px 20px;
+input[type=text], [type=email], [type=tel], [type=password] {
+    padding: 12px 20px 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
     background-color: #e0cfa4;
@@ -84,7 +111,13 @@ input[type=text], [type=email], [type=tel] {
     color: #7a0e2c;
 }
 
-input[type=button], input[type=submit], input[type=reset] {
+input[type=text]:focus, [type=email]:focus, [type=tel]:focus, [type=password]:focus {
+    outline: none !important; /* Removing the default focus outline to replace with a custom one */
+    background-color: #f1e8d2;
+    border: 2px dotted #7a0e2c;
+}
+
+input[type=button], [type=submit], [type=reset] {
     background-color: #f1e8d2;
     border: dotted #7a0e2c;
     color: #7a0e2c;
@@ -95,7 +128,7 @@ input[type=button], input[type=submit], input[type=reset] {
     font: 16px Segoe UI Light;
 }
 
-input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover {
+input[type=button]:hover, [type=submit]:hover, [type=reset]:hover {
     background-color: #7a0e2c;
     border: dotted #e0cfa4;
     color: #e0cfa4;
@@ -127,6 +160,10 @@ select {
     background-color: #f1e8d2;
     font: 16px Segoe UI Light;
     color: #7a0e2c;
+}
+
+label {
+    padding-right: 20px;
 }
 
 ::placeholder {
@@ -181,6 +218,8 @@ nav {
     z-index: 9999;
     display: flex; /* Used flex to get rid of some old-fashioned inline alignment */
     justify-content: center;
+    flex-wrap: wrap; /* This ensures the buttons stack on top of each other when resizing layout, 
+    rather than becoming inaccessible due to the inability to scroll horizontally*/
 }
 
 /* Links */
@@ -259,12 +298,33 @@ nav a {
     text-align: justify;
 }
 
+.colproject {
+    margin: auto;
+    width: 33%;
+    float: left;
+    padding: 20px; 
+    text-align: justify;
+}
+
 /* Responsive Layout and Stacking of Columns */
 
 @media screen and (max-width:600px) {
     .column{
         width: 100%;
     }
+}
+
+/* Project Images */
+
+.photo { /*Thumbnail Transparency*/
+    opacity: 40%;
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.photo:hover{ /*Thumbnail Full Opacity during Hover*/
+    opacity: 100%;
 }
 
 /* Image Overlays with Text */

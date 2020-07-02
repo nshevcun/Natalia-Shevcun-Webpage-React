@@ -9,7 +9,7 @@ import Education from './components/education.js';
 import Contact from './components/contact.js';
 import Projects from './components/proj.js';
 
-function App() {
+function Main() {
   return (
     <div>
 
@@ -34,4 +34,4 @@ function App() {
   );
 }
 
-export default App;
+export default Main;

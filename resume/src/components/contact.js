@@ -1,4 +1,5 @@
 import React from 'react';
+import ScriptTag from 'react-script-tag';
 import '../assets/styles.css';
 
 class Contact extends React.Component {
@@ -17,7 +18,7 @@ class Contact extends React.Component {
                         Looking forward to getting to know you better!
                     </p>
 
-                    <form name="contactMe" action="action.php" onsubmit="return validateForm()" method="send">
+                    <form name="contactMe" action="action.php" method="send">
 
                         {/* Guest's Name Here */}
 
@@ -83,7 +84,6 @@ class Contact extends React.Component {
                             <input type="submit" defaultValue="Submit" />
                             <input type="reset" defaultValue="Reset" />
                         </p>
-
                     </form>
 
                 </section>
