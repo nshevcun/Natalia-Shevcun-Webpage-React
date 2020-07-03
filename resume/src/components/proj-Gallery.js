@@ -19,8 +19,6 @@ class GallerySite extends React.Component {
                             <br /><br /><br /><br />
 
                             <a href="https://github.com/nshevcun/assignment1-csfs1010" target="_blank" rel="noreferrer noopener"><h3>Click here to view the Git repository</h3></a>
-                            
-                            <h3>Click here to view the webpage</h3>
 
                         </article>
 

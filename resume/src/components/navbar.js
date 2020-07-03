@@ -12,6 +12,10 @@ class Navbar extends React.Component {
     render() {
         return(
             <React.Fragment>
+
+                {/* I am not using this component in the new version of the app,
+                but I'm keeping it for now in case it may be needed in the future. */}
+                
                 <nav>
                     <a href="/#projects"><img className="navbutton" src={ProjButton} alt="Projects Button" /></a>
                     <a href="/#about"><img className="navbutton" src={AboutButton} alt="About Button" /></a> 
@@ -21,7 +25,6 @@ class Navbar extends React.Component {
                     <a href="/#contact"><img className="navbutton" src={ContactButton} alt="Contact Button" /></a>
                     <a href="/login"><img className="navbutton" src={LoginButton} alt="Login Button" /></a>
                 </nav>
-                <br /><br /> {/* Without these spaces, the "About" bar ends up being hidden by the navbar */}
             </React.Fragment>
         );
     }

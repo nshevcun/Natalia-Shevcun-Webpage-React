@@ -9,6 +9,8 @@ class Projects extends React.Component {
     render() {
         return (
             <React.Fragment>
+
+                <br /><br /> {/* Without these spaces, the "About" bar ends up being hidden by the navbar */}
                 
                 {/* I will be updating this with other projects, 
                 * so all projects will be separate components, for ease of use. */}

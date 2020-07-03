@@ -16,11 +16,9 @@ class ToDoSite extends React.Component {
 
                     <p>Ever wanted a handy way to keep track of daily tasks without having to use up a ton of paper? This little application may be just what you were looking for.</p>
 
-                    <br /><br /><br /><br />
+                    <br /><br /><br />
                     
                     <a href="https://github.com/nshevcun/assignment2-csfs1010" target="_blank" rel="noreferrer noopener"><h3>Click here to view the Git repository</h3></a>
-
-                    <h3>Click here to view the app in action</h3>
 
                 </article>
 

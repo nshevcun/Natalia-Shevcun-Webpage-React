@@ -1,37 +1,30 @@
-import React from 'react';
+import React, { Component } from 'react';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
-import Footer from './components/footer.js';
-import Header from './components/header.js';
-import About from './components/about.js';
-import Skills from './components/skills.js';
-import Employment from './components/employment.js';
-import Education from './components/education.js';
-import Contact from './components/contact.js';
-import Projects from './components/proj.js';
+import Main from './components/Main.js';
+import Login from './components/Login.js';
+import Navigation from './components/Navigation.js';
 
-function App() {
-  return (
-    <div>
-
-      <header>
-        <Header />
-      </header>
-
-      <main>
-        <Projects />
-        <About />
-        <Skills />
-        <Employment />
-        <Education />
-        <Contact />
-      </main>
-
-      <footer>
-      <Footer />
-      </footer>
-      
-    </div>
-  );
+class App extends Component {
+  render() {
+    return (
+      <BrowserRouter>
+        <div>
+          <Navigation />
+            <Switch>
+              <Route path="/" component={Main} exact/>
+              <Route path="/#projects" component={Main} exact/>
+              <Route path="/#about" component={Main} exact/>
+              <Route path="/#skills" component={Main} exact/>
+              <Route path="/#employment" component={Main} exact/>
+              <Route path="/#education" component={Main} exact/>
+              <Route path="/#contact" component={Main} exact/>
+              <Route path="/login" component={Login} />
+            </Switch>
+        </div>
+      </BrowserRouter>
+    );
+  }
 }
 
 export default App;
